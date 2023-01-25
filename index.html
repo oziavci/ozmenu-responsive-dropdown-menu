@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>JavaScript - CSS Responsive Dropdown Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container pt-4">
+      <!-- Ozmenu -->
+      <div class="menu-open"><span class="open"></span></div>
+      <div class="ozmenu mt-4">
+        <div class="menu-close"><span class="close"></span></div>
+        <ul class="ozmenu-nav">
+          <li class="item"><a href="#">Home</a></li>
+          <li class="item"><a href="#">About Us</a></li>
+          <li class="item dropdownitem">
+            <a href="#" class="nav-dropdown">Services</a>
+            <div class="dropdown">
+              <ul>
+                <li class="item"><a href="#">Software</a></li>
+                <li class="item"><a href="#">Server Maintenance</a></li>
+                <li class="item dropdownitem">
+                  <a href="#" class="nav-dropdown">Web Hosting</a>
+                  <div class="dropdown">
+                    <ul>
+                      <li class="item"><a href="#">Linux Hosting</a></li>
+                      <li class="item"><a href="#">Windows Hosting</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="item"><a href="#">Graphic Design</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="item dropdownitem">
+            <a href="#" class="nav-dropdown">Web Design</a>
+            <div class="dropdown">
+              <ul>
+                <li class="item"><a href="#">Corporate Web Design</a></li>
+                <li class="item dropdownitem">
+                  <a href="#" class="nav-dropdown">E-Commerce</a>
+                  <div class="dropdown">
+                    <ul>
+                      <li class="item"><a href="#">Ready E-Commerce</a></li>
+                      <li class="item"><a href="#">Custom E-Commerce</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="item dropdownitem">
+                  <a href="#" class="nav-dropdown">Personal Web Design</a>
+                  <div class="dropdown">
+                    <ul>
+                      <li class="item"><a href="#">Blog Site</a></li>
+                      <li class="item"><a href="#">Portfolio Site</a></li>
+                      <li class="item"><a href="#">Custom Personal Site</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="item"><a href="#">Custom Web Design</a></li>
+                <li class="item"><a href="#">Onepage Web Design</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="item dropdownitem">
+            <a href="#" class="nav-dropdown">Help</a>
+            <div class="dropdown">
+              <ul>
+                <li class="item"><a href="#">Mail Settings</a></li>
+                <li class="item"><a href="#">Hosting Selection</a></li>
+                <li class="item"><a href="#">Admin Panel</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="item"><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <!-- /Ozmenu -->
+    </div>
+    <script src="ozmenu.js"></script>
+  </body>
+</html>
